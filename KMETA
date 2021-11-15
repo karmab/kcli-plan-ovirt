@@ -1,0 +1,39 @@
+- name: ovirt
+  file: upstream.yml
+  description: Upstream ovirt all in one with nfs
+  numvms: 1
+
+- name: ovirt3
+  file: upstream3.yml
+  description: Upstream ovirt 3.X all in one with nfs
+  numvms: 1
+
+- name: rhv
+  file: downstream.yml
+  description: Downstream rhv all in one with nfs
+  numvms: 1
+
+- name: rhev3
+  file: rhev35.yml
+  description: Downstream rhev 3 all in one with nfs
+  numvms: 1
+
+- name: ovirt_advanced
+  file: advanced.yml
+  description: Downstream rhev with one engine with nfs and two nodes
+  numvms: 3
+
+- name: ovirt_advanced_ldap
+  file: advanced_ldap.yml
+  description: Downstream rhev with one engine with nfs and two nodes and an ldap container
+  numvms: 3
+
+- name: ovirt_hosted
+  file: downstream.yml
+  description: Upstream Ovirt Hosted Engine with two nodes and an NFS server
+  numvms: 3
+
+- name: rhev_hosted
+  file: downstream.yml
+  description: Downstream Rhev Hosted Engine with two nodes and an NFS server
+  numvms: 3
